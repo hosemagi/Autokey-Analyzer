@@ -1,0 +1,16 @@
+Files:
+
+Autokey.class			-- main application
+AutokeySolver.class		-- compiled AutokeySolver module
+/src					-- source directory
+cipher.txt				-- class example of autokey-enciphered message
+
+Usage: from command line:
+
+> java Autokey <cipher text file path> <min key length> <max key length>
+
+e.g.
+
+java Autokey cipher.txt 5 15
+
+Will analyze the enciphered message contained in cipher.txt, testing for all key lengths: 5 <= keylength <= 15
